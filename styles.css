@@ -1,0 +1,28 @@
+header{
+    background:linear-gradient(135deg, #83580b,#d9b650,#f5dd7b,#fde994);
+    align-items:right;
+    padding:20px;
+    border:none;
+    
+
+}
+.anc{
+    font-weight:bolder;
+    font-family:monospace,sans-serif;
+    border:2px solid rgb(255, 255, 255);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    padding:10px 20px;
+    margin:30px;
+    align-items:center;
+    transition:all 0.3s ease;
+
+}
+.anc:hover{
+    border:none;
+    color:grey;
+    transform:scale(1.25);
+    background-color:white;
+
+}
