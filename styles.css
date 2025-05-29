@@ -1,10 +1,18 @@
-header{
-    background:linear-gradient(135deg, #83580b,#d9b650,#f5dd7b,#fde994);
-    align-items:right;
-    padding:20px;
-    border:none;
-    
+body{
+    background-color: #494D5f;
+}
+html, body {
+  
+  margin:0;
+  padding: 0;
+}
 
+header{
+    background:linear-gradient(135deg, #83580b,#d9b650,#f5dd7b,#fde994); 
+    margin:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 .anc{
     font-weight:bolder;
@@ -13,10 +21,12 @@ header{
     color:white;
     text-decoration:none;
     border-radius:10px;
+    margin:15px;
     padding:10px 20px;
-    margin:30px;
     align-items:center;
-    transition:all 0.3s ease;
+    transition:all 0.5s ease;
+    display: inline-block;
+    box-sizing:border-box;
 
 }
 .anc:hover{
@@ -24,5 +34,26 @@ header{
     color:grey;
     transform:scale(1.25);
     background-color:white;
+    text-decoration:underline;
+    box-shadow:10px 10px 6px black;
+    font-weight:bolder;
+    font-family:monospace,sans-serif;
 
+}
+#head{
+   padding:20px;
+    color:white;
+    font-family:monospace,sans-serif;
+    font-weight:bolder;
+    font-size:3em;
+    
+
+}
+#div{
+    align-items:right;
+    padding:10px;
+    margin:none;
+    box-sizing:border-box; 
+    display:inline-block;
+   
 }
