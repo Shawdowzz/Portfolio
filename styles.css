@@ -2,20 +2,24 @@ body{
     background-color: #494D5f;
 }
 html, body {
-  
+  height: 100%;
   margin:0;
   padding: 0;
 }
-#foot{
+footer{
     background-color: black;
     margin:0;
+    text-align:center;
     display:flex;
     font-family:monospace,sans-serif;
     font-size:20px;
     text-decoration:none;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
+    
 }
+
 header{
     background-color:black; 
     margin:0;
@@ -75,4 +79,20 @@ header{
     cursor: pointer;
     margin:20px;
     
+}
+.name{
+    color:yellow;
+    font-family:monospace,sans-serif;
+    font-weight:bolder;
+    font-size:35px;
+    padding:5px 30px;
+
+}
+#bio{
+    color:rgb(0, 255, 0);
+    font-family:monospace,sans-serif;
+    font-weight:bolder;
+    font-size:20px;
+    padding:5px 30px;
+
 }
