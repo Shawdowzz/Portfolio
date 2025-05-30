@@ -1,98 +1,104 @@
-body{
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #494D5f;
 }
-html, body {
-  height: 100%;
-  margin:0;
-  padding: 0;
+
+main {
+    flex: 1; /* Push footer down */
 }
-footer{
+
+/* Footer styles */
+footer {
     background-color: black;
-    margin:0;
-    text-align:center;
-    display:flex;
-    font-family:monospace,sans-serif;
-    font-size:20px;
-    text-decoration:none;
-    justify-content:center;
-    align-items:center;
+    text-align: center;
+    display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
 }
 
-header{
-    background-color:black; 
-    margin:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Header styles */
+header {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.anc{
-    font-weight:bolder;
-    font-family:monospace,sans-serif;
-    border:4px solid rgb(255, 255, 255);
-    color:rgb(255, 255, 255);
-    text-decoration:none;
-    border-radius:10px;
-    margin:15px;
-    padding:10px 20px;
-    align-items:center;
-    transition:all 0.5s ease;
+
+/* Navigation link styles */
+.anc {
+    font-weight: bolder;
+    font-family: monospace, sans-serif;
+    border: 4px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
     display: inline-block;
-    box-sizing:border-box;
-    cursor:pointer;
-    
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.anc:hover {
+    border: none;
+    color: black;
+    transform: scale(1.25);
+    background-color: white;
+    text-decoration: underline;
+    box-shadow: 5px 5px 9px white;
+}
 
+/* Header text */
+#head {
+    padding: 20px;
+    color: white;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
 }
-.anc:hover{
-    border:none;
-    color:rgb(0, 0, 0);
-    transform:scale(1.25);
-    background-color:white;
-    text-decoration:underline;
-    box-shadow:5px 5px 9px rgb(255, 255, 255);
-    font-weight:bolder;
-    font-family:monospace,sans-serif;
 
+/* Navigation container */
+#div {
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
 }
-#head{
-   padding:20px;
-    color:rgb(255, 255, 255);
-    font-family:monospace,sans-serif;
-    font-weight:bolder;
-    font-size:3em;
-    flex: 1 1 1;
-}
-#div{
-    align-items:right;
-    padding:10px;
-    margin:none;
-    box-sizing:border-box; 
-    display:inline-block;
-    
-   
-}
-#email{
-    padding:20px;
-    color:rgb(255, 255, 255);
+
+/* Email link in footer */
+#email {
+    padding: 20px;
+    color: white;
     text-decoration: none;
     cursor: pointer;
-    margin:20px;
-    
+    margin: 20px;
 }
-.name{
-    color:yellow;
-    font-family:monospace,sans-serif;
-    font-weight:bolder;
-    font-size:35px;
-    padding:5px 30px;
 
+/* Main text styles */
+.name {
+    color: yellow;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 5px 30px;
 }
-#bio{
-    color:rgb(0, 255, 0);
-    font-family:monospace,sans-serif;
-    font-weight:bolder;
-    font-size:20px;
-    padding:5px 30px;
-
+#bio {
+    color: lime;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 30px;
 }
