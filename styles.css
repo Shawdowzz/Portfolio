@@ -8,14 +8,14 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #494D5f;
+    background-color: #eeff00;
 }
 
 main {
-    flex: 1; /* Push footer down */
+    flex: 1; 
 }
 
-/* Footer styles */
+
 footer {
     background-color: black;
     text-align: center;
@@ -28,17 +28,14 @@ footer {
     color: white;
     padding: 20px;
 }
-
-/* Header styles */
 header {
     background-color: black;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
-
-/* Navigation link styles */
 .anc {
     font-weight: bolder;
     font-family: monospace, sans-serif;
@@ -80,23 +77,23 @@ header {
 
 /* Email link in footer */
 #email {
-    padding: 20px;
+    
     color: white;
     text-decoration: none;
     cursor: pointer;
-    margin: 20px;
+    
 }
 
 /* Main text styles */
 .name {
-    color: yellow;
+    color: rgb(5, 5, 5);
     font-family: monospace, sans-serif;
     font-weight: bolder;
     font-size: 35px;
     padding: 5px 30px;
 }
 #bio {
-    color: lime;
+    color: rgb(132, 25, 233);
     font-family: monospace, sans-serif;
     font-weight: bolder;
     font-size: 20px;
